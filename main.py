@@ -28,6 +28,7 @@ if test == "Home":
     st.table(data2)  
 
 if test == "Tabel Diagram":
+    st.subheader("Data Distribusi Wisatawan Perbandingan Menurut Jenis Kelamin Laki - laki dan Perempuan")
     perempuan = "Perempuan"  
     laki = "Laki-Laki"
     
@@ -66,10 +67,10 @@ if test == "Tabel Diagram":
     ax.set_ylabel("Laki-laki")
     st.pyplot(fig)
 
-    st.subheader("Data Distribusi Wisatawan Menurut Jenis Kelamin Usia")
+    st.subheader("Data Distribusi Wisatawan Berdasarkan Usia")
     fig, ax = plt.subplots(figsize=(30, 7))
     ax.bar(data2["Kebangsaan"], data2['<25'], color="red")
-    ax.set_title("Data Distribusi Wisatawan Menurut Usia")
+    ax.set_title("Data Distribusi Wisatawan Berdasarkan Usia")
     ax.set_xlabel("Kebangsaan")
     ax.set_ylabel("Laki-laki")
     st.pyplot(fig)
@@ -96,6 +97,7 @@ if test == "Pie Chart":
         ax.axis('equal')  # Membuat pie chart berbentuk lingkaran sempurna
         st.pyplot(fig)
 
+        st.subheader("Data Distribusi Wisatawan Menurut Jenis Kelamin Laki-laki")
         fig, ax = plt.subplots()
         ax.pie(
             laki,
