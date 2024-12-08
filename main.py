@@ -1,5 +1,5 @@
-from matplotlib import pyplot as plt
 import streamlit as st
+import matplotlib.pyplot as plt
 import pandas as pd 
 import numpy as np
 
@@ -48,7 +48,7 @@ if test == "Tabel Diagram":
     ax.set_xticklabels(kebangsaan, size=12)
     ax.legend(fontsize=14)
 
-    plt.show()
+    st.pyplot(fig)
 
     st.subheader("Data Distribusi Wisatawan Menurut Jenis Kelamin Laki - laki")
     fig, ax = plt.subplots(figsize=(30, 7))
