@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd 
 import numpy as np
-import matplotlib.pyplot as plt
 
 data = pd.read_excel("data_mancanegara.xlsx", sheet_name="Gender Age")
 data2 = pd.read_excel("data_mancanegara.xlsx", sheet_name="Usia")
